@@ -1,0 +1,137 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/*variables*/
+:root {
+  --verylightgray: hsl(0, 0%, 95%);
+  --transparentwhite: hsl(0, 0%, 100%, 0.75);
+  --brightorange: hsl(31, 77%, 52%);
+  --darkcyan: hsl(184, 100%, 22%);
+  --verydarkcyan: hsl(179, 100%, 13%);
+}
+
+body {
+  background: var(--verylightgray);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.grid-container {
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(3, 400px);
+  margin: 10%;
+}
+
+.grid-item {
+  padding: 50px;
+  padding-left: 60px;
+}
+
+.grid-item img {
+  margin-bottom: 25px;
+}
+
+.grid-item h1 {
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  color: var(--verylightgray);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.grid-item p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparentwhite);
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 82%;
+  margin-bottom: 20px;
+}
+
+.grid-item-1 {
+  background: var(--brightorange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.grid-item-2 {
+  background: var(--darkcyan);
+}
+.grid-item-3 {
+  background: var(--verydarkcyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background: var(--verylightgray);
+  margin-top: 15px;
+  width: 40%;
+  padding: 10px;
+  border: white solid 1.5px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item-1 .button {
+  color: var(--brightorange);
+}
+.grid-item-2 .button {
+  color: var(--darkcyan);
+}
+.grid-item-3 .button {
+  color: var(--verydarkcyan);
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--verylightgray);
+  border: white solid 1.5px;
+}
+
+.grid-item-1 .button:hover {
+  background: var(--brightorange);
+}
+.grid-item-2 .button:hover {
+  background: var(--darkcyan);
+}
+.grid-item-3 .button:hover {
+  background: var(--verydarkcyan);
+}
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: auto;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .grid-item {
+    padding-left: 60px;
+  }
+
+  .grid-item p {
+    max-width: 100%;
+    margin-bottom: 90px;
+  }
+
+  .grid-item-1 {
+    background: var(--brightorange);
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .grid-item-3 {
+    background: var(--verydarkcyan);
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .button {
+    width: 50%;
+  }
+}
