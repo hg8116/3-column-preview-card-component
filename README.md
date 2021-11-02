@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend-Mentor-Submission](https://www.frontendmentor.io/solutions/3columnpreviewcard-U0UV8pvLD)
+- Live Site URL: [3-Column-Preview-Card-Component](https://hg8116.github.io/3-column-preview-card-component/)
 
 ## My process
 
